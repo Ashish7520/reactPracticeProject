@@ -9,6 +9,13 @@ const AddUser = (props) =>{
 
     const formSubmitHandler = (event) =>{
         event.preventDefault();
+        if(enteredAge.trim().length === 0 || enteredUsername.trim().length === 0){
+            return;
+        }
+
+        if(enteredAge < 1){
+            return;
+        }
         console.log('enterd username', enteredUsername);
         console.log('entered age' , enteredAge)
         setUsername('');
