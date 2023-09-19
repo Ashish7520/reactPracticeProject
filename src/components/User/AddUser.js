@@ -2,6 +2,7 @@ import React, {useState} from "react";
 
 import Cart from "../UI/Card";
 import Error from "../UI/Error";
+import './AddUser.css'
 
 
 const AddUser = (props) =>{

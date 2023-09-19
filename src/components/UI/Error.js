@@ -4,7 +4,7 @@ import './Error.css'
 
 const Error = (props) =>{
     return (
-        <div>
+        <div className="outer">
             <div className="backdrop" onClick={props.onConfirm} />
             <div className="modal">
             <header>

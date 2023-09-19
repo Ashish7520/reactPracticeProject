@@ -1,3 +1,5 @@
+
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -9,10 +11,33 @@
   }
 
   .modal {
+    background-color: #bbd0ff;
     position: fixed;
     top: 30vh;
     left: 10%;
-    width: 80%;
     z-index: 100;
     overflow: hidden;
+    height: 200px;
+    width: 720px;
+    margin-left: 250px;
+    padding-left: 150px;
+    display: inline-block;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
+
+  button{
+    background-color: #a1a6b4;
+    border: 2px solid #94c5cc;
+    border-radius: 7px;
+    height: 30px;
+    color: black;
+    font-size: medium;
+    font-weight: bolder;
+
+}
+
+
+  
