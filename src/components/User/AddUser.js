@@ -50,7 +50,7 @@ const AddUser = (props) =>{
     }
 
     return (
-        <Wrapper>
+        <React.Fragment>
             {error &&<Error title ={error.title} massage ={error.massage} onConfirm={errorHandler} />}
         <Cart className="userCart">
         <form className="form" onSubmit={formSubmitHandler}>
@@ -65,7 +65,7 @@ const AddUser = (props) =>{
             <button type="submit">Add User</button>
         </form>
         </Cart>
-        </Wrapper>
+        </React.Fragment>
     )
 }
 
