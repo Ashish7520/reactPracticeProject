@@ -2,6 +2,7 @@ import React, {useState} from "react";
 
 import Cart from "../UI/Card";
 import Error from "../UI/Error";
+import Wrapper from "../helper/wrapper";
 import './AddUser.css'
 
 
@@ -49,7 +50,7 @@ const AddUser = (props) =>{
     }
 
     return (
-        <div>
+        <Wrapper>
             {error &&<Error title ={error.title} massage ={error.massage} onConfirm={errorHandler} />}
         <Cart className="userCart">
         <form className="form" onSubmit={formSubmitHandler}>
@@ -64,7 +65,7 @@ const AddUser = (props) =>{
             <button type="submit">Add User</button>
         </form>
         </Cart>
-        </div>
+        </Wrapper>
     )
 }
 
